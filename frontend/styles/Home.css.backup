@@ -1,0 +1,762 @@
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero-title span {
+    color: var(--color-success);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background-color: var(--bg-glass);
+    padding: 5px 20px;
+    border: 1px solid var(--border-strong);
+}
+
+.hero-container {
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding-top: clamp(40px, 5vw, 100px);
+}
+
+/* Clip overflow on each animated line to prevent layout jumps */
+.anim-container {
+    overflow: hidden;
+}
+
+.hero-title {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: lighter;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    will-change: transform, opacity;
+}
+
+.hero-description {
+    font-size: clamp(0.7rem, 1.1vw, 1.5rem);
+    width: clamp(80%, 90%, 100%);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    will-change: transform, opacity;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+    will-change: transform, opacity;
+}
+
+.hero-btns button {
+    margin: 0 10px;
+}
+
+/* =============================================
+   MARQUEE TITLE
+   ============================================= */
+.company-title {
+    width: 100%;
+    overflow: hidden;
+    /* clip the oversized text */
+}
+
+.company-title h1 {
+    font-size: clamp(4rem, 14vw, 12rem);
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+    /* Start centered, GSAP will translate it */
+    display: inline-block;
+    transform: translateX(-50%);
+    color: var(--text-primary);
+    will-change: transform;
+}
+
+/* =============================================
+   INTRO SECTION
+   ============================================= */
+.intro-container {
+    width: 100%;
+    height: 100vh;
+    padding: clamp(40px, 7vw, 80px) 40px;
+    background-color: var(--bg-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-innerBox {
+    background-color: var(--bg-surface);
+    width: 100%;
+    max-width: 1000px;
+    max-height: 80vh;
+    border-radius: 20px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.intro-card1 {
+    grid-row: span 1 / span 1;
+}
+
+.intro-card2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.intro-card3 {
+    grid-row: span 3 / span 1;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.intro-card4 img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.intro-cards {
+    border: 1px solid var(--border-strong);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.intro-cards h3 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1em;
+    line-height: 1.2;
+}
+
+.intro-btn {
+    margin-top: 2em;
+}
+
+.intro-card4 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    padding: 0;
+}
+
+/* =============================================
+   HOME SERVICES SECTION
+   ============================================= */
+.home-services {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3vw 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.home-services h1 {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: lighter;
+    color: var(--text-primary);
+    padding: 5px 1.5em;
+}
+
+.home-services h3 {
+    font-size: clamp(1rem, 2.1vw, 2rem);
+    margin-bottom: 2em;
+    font-weight: lighter;
+}
+
+.serviceCard-container {
+    display: grid;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    place-items: center;
+    gap: 2em;
+
+}
+
+.service-cards {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+.service-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform-origin: center center;
+}
+
+.card-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    bottom: 0;
+    background: #C09843;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 100%);
+    padding: 1em;
+}
+
+
+
+.card-overlay p {
+    color: white;
+    transform: translateY(160%);
+    transition: 0.5s ease;
+}
+
+.card-overlay:hover p {
+    display: flex;
+    transform: translateY(0%);
+}
+
+.card-overlay h3 {
+    color: white;
+    margin-bottom: 0.2em;
+}
+
+
+/* =============================================
+   HOME PORTFOLIO SECTION
+   ============================================= */
+.home-portfolio {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3vw 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.home-portfolio h1 {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: lighter;
+    color: var(--text-primary);
+    padding: 5px 1.5em;
+}
+
+.home-portfolio h3 {
+    font-size: clamp(1rem, 2.1vw, 2rem);
+    margin-bottom: 2em;
+    font-weight: lighter;
+}
+
+.home-portfolio-container {
+    display: grid;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.home-project-card {
+    position: relative;
+    background: var(--bg-surface);
+    border-radius: 1em;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.home-project-image {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.home-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.home-project-card:hover .home-project-image img {
+    transform: scale(1.05);
+}
+
+.home-project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.home-project-card:hover .home-project-overlay {
+    opacity: 1;
+}
+
+.home-project-overlay .view-project {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.home-project-card:hover .home-project-overlay .view-project {
+    transform: scale(1);
+}
+
+.home-project-info {
+    padding: 1.5em;
+    text-align: left;
+}
+
+.home-project-cat {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-success);
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.home-project-info h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    text-align: left;
+    left: 0;
+    transform: none;
+    padding: 0;
+}
+
+.home-project-info p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.portfolio-btn {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.portfolio-btn a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =============================================
+   CONSULTATION SECTION
+   ============================================= */
+.home-consultation {
+    width: 100%;
+    padding: clamp(40px, 5vw, 80px) 40px;
+    background-color: var(--bg-main);
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.forms-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.contact-form,
+.book-consultation {
+    width: 50%;
+    background-color: var(--bg-surface);
+    border-radius: 1em;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    /* Push content down to make room for floating label */
+    padding-top: 3.5em;
+}
+
+/* Replaced <form> layout with a div to avoid implicit form submission bugs */
+.form-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form input,
+.book-consultation input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95em;
+    border: 1px solid rgba(218, 217, 217, 0.096);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border-radius: 0.4em;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-muted);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-success);
+    box-shadow: 0 0 0 2px rgba(99, 241, 113, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-name,
+.form-date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.form-h3 {
+    display: inline-block;
+    position: absolute;
+    top: -1.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 14px;
+    white-space: nowrap;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: var(--text-primary);
+    border: 1px solid var(--border-strong);
+    background-color: var(--bg-surface);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+input[type="date"],
+input[type="time"] {
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+/* =============================================
+   TABLET — max-width: 1024px
+   ============================================= */
+@media (max-width: 1024px) {
+    .hero-container {
+        padding: 0 20px;
+        height: 30vh;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        gap: 24px;
+    }
+
+    .hero-title {
+        white-space: normal;
+    }
+
+    .intro-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 24px;
+    }
+
+    .intro-innerBox {
+        max-height: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .intro-card1 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .intro-card2 {
+        grid-column: span 2;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+
+    .intro-card3 {
+        grid-column: span 1;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+
+    .intro-card4 {
+        grid-column: span 1;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+        padding: 0;
+        min-height: 220px;
+    }
+
+    .home-consultation {
+        height: auto;
+        padding: 60px 24px;
+    }
+
+    .forms-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3em;
+        height: auto;
+    }
+
+    .contact-form,
+    .book-consultation {
+        width: 100%;
+    }
+
+    .home-portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em 24px;
+    }
+}
+
+/* =============================================
+   MOBILE — max-width: 768px
+   Disable horizontal card scroll; show vertical stack
+   ============================================= */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 100px 20px 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-title {
+        white-space: normal;
+        font-size: clamp(1.6rem, 7vw, 2.4rem);
+    }
+
+    .hero-description {
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+        margin-top: 16px;
+    }
+
+    /* Services: switch to vertical scroll on mobile */
+    .home-services {
+        padding: 40px 16px;
+        overflow: visible;
+    }
+
+    .home-services h1 {
+        font-size: clamp(1.6rem, 7vw, 2.4rem);
+        padding: 5px 0.8em;
+        left: 0;
+        transform: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-services h3 {
+        font-size: clamp(0.9rem, 4vw, 1.2rem);
+    }
+
+    /* On mobile: remove horizontal layout, stack cards vertically */
+    .serviceCard-container {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+        /* Unset will-change since GSAP won't animate this on mobile */
+        will-change: auto;
+        /* Reset any x transform GSAP may have applied before resize */
+        transform: none !important;
+    }
+
+    .service-cards {
+        width: 100%;
+        max-width: 400px;
+        height: clamp(260px, 55vw, 360px);
+    }
+
+    /* Intro */
+    .intro-container {
+        padding: 50px 16px;
+        height: auto;
+    }
+
+    .intro-innerBox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-height: none;
+    }
+
+    .intro-card1,
+    .intro-card2,
+    .intro-card3,
+    .intro-card4 {
+        grid-column: 1;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+
+    .intro-card4 {
+        min-height: 200px;
+        padding: 0;
+    }
+
+    /* Consultation */
+    .home-consultation {
+        padding: 60px 16px 40px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .forms-container {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .contact-form,
+    .book-consultation {
+        width: 100%;
+        padding: 3.5em 16px 16px;
+    }
+
+    .form-name,
+    .form-date {
+        flex-direction: column;
+        gap: 0.75em;
+    }
+
+    .company-title {
+        padding: 3em 0;
+    }
+
+    .company-title h1 {
+        font-size: clamp(5rem, 18vw, 10rem);
+    }
+
+    .home-portfolio-container {
+        grid-template-columns: 1fr;
+        padding: 2em 16px;
+        gap: 1.5em;
+    }
+
+    .home-project-image {
+        height: 200px;
+    }
+}
+
+/* =============================================
+   SMALL MOBILE — max-width: 480px
+   ============================================= */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(1.4rem, 8vw, 2rem);
+    }
+
+    .hero-title span {
+        padding: 3px 12px;
+    }
+
+    .intro-cards h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-cards {
+        width: 100%;
+    }
+
+    .form-h3 {
+        font-size: clamp(0.9rem, 4vw, 1.4rem);
+        padding: 4px 10px;
+    }
+
+    .home-portfolio h1 {
+        font-size: clamp(1.6rem, 7vw, 2.4rem);
+        padding: 5px 0.8em;
+    }
+
+    .home-portfolio h3 {
+        font-size: clamp(0.9rem, 4vw, 1.2rem);
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Hub Corporation</title>
+    <link rel="stylesheet" href="/frontend/styles/components.css">
+    <link rel="stylesheet" href="/frontend/styles/index.css">
+    <link rel="stylesheet" href="/frontend/styles/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <!-- HERO -->
+    <section class="section-container hero-container">
+        <div class="hero-text">
+            <div class="anim-container">
+                <h1 class="hero-title">Place Where Ideas</h1>
+            </div>
+            <div class="anim-container">
+                <h1 class="hero-title">Come to Life</h1>
+            </div>
+            <div class="anim-container">
+                <p class="hero-description">
+                    Developers Hub Corporation is a global community of skilled developers dedicated to innovation
+                    and collaboration. We provide modern IT solutions while connecting tech professionals to share
+                    knowledge, build impactful projects, and stay ahead of industry trends.
+                </p>
+            </div>
+            <div class="anim-container">
+                <div class="hero-btns">
+                    <button class="btn-primary"><a href="/frontend/views/Services.html">Services <i
+                                class="ri-arrow-right-up-line"></i></a></button>
+                    <button class="btn-secondary"><a href="/frontend/views/Services.html#contact">Book Consultation <i
+                                class="ri-arrow-right-up-line"></i></a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE TITLE -->
+    <section class="company-title" aria-hidden="true">
+        <h1>Developers Hub</h1>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro-container">
+        <div class="intro-innerBox">
+            <div class="intro-cards intro-card1">
+                <h3>Next-Gen Technologies</h3>
+                <p>We explore and implement emerging technologies to stay ahead of the curve.</p>
+            </div>
+            <div class="intro-cards intro-card2">
+                <h3>Global Collaboration</h3>
+                <p>Work with talented developers from around the world on forward-thinking projects.</p>
+                <div class="intro-btn">
+                    <button class="btn-primary"><a href="/frontend/views/Services.html">Discover More <i
+                                class="ri-arrow-right-up-line"></i></a></button>
+                </div>
+            </div>
+            <div class="intro-cards intro-card3">
+                <h3>Innovative IT Solutions</h3>
+                <p>We design and develop modern, scalable, and high-performance software tailored to evolving business
+                    needs.</p>
+            </div>
+            <div class="intro-cards intro-card4">
+                <img src="/frontend/assets/intropic.webp" alt="Team collaboration" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="home-services">
+        <h1>Services</h1>
+        <h3>"Develop. Analyze. Innovate. Scale."</h3>
+
+        <div class="serviceCard-container">
+            <div class="service-cards">
+                <img src="/frontend/assets/intropic.webp" alt="Web Design" loading="lazy">
+                <div class="card-overlay">
+                    <h3>Web Design</h3>
+                    <p>Modern and responsive website designs tailored to your brand.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <img src="/frontend/assets/intropic.webp" alt="Web Development" loading="lazy">
+                <div class="card-overlay">
+                    <h3>Web Development</h3>
+                    <p>Scalable full-stack applications built with cutting-edge technologies.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <img src="/frontend/assets/intropic.webp" alt="Mobile Apps" loading="lazy">
+                <div class="card-overlay">
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile solutions for iOS and Android.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <img src="/frontend/assets/intropic.webp" alt="Cloud Solutions" loading="lazy">
+                <div class="card-overlay">
+                    <h3>Cloud Solutions</h3>
+                    <p>Reliable cloud infrastructure and deployment pipelines at scale.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <img src="/frontend/assets/intropic.webp" alt="UI/UX Design" loading="lazy">
+                <div class="card-overlay">
+                    <h3>UI/UX Design</h3>
+                    <p>Human-centered design experiences that convert and delight.</p>
+                </div>
+            </div>
+            <div class="service-cards">
+                <img src="/frontend/assets/consultation.webp" alt="Consultation" loading="lazy">
+                <div class="card-overlay">
+                    <h3>Consultation</h3>
+                    <p>Strategic tech consulting to align your vision with the right solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="service-btn btn-secondary"><a href="/frontend/views/Services.html">All Services <i
+                    class="ri-arrow-right-up-line"></i></a></button>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="home-portfolio">
+        <h1>Featured Work</h1>
+        <h3>"Crafting Digital Excellence"</h3>
+        <div class="home-portfolio-container">
+            <!-- Portfolio items loaded dynamically -->
+        </div>
+        <button class="portfolio-btn btn-secondary"><a href="/frontend/views/Portfolio.html">View All Projects <i
+                    class="ri-arrow-right-up-line"></i></a></button>
+    </section>
+
+    <!-- CONSULTATION -->
+    <section class="home-consultation">
+        <div class="forms-container">
+            <div class="contact-form">
+                <h2 class="form-h3">Let's Connect</h2>
+                <div class="form-inner">
+                    <div class="form-name">
+                        <input type="text" name="first-name" placeholder="First Name" autocomplete="given-name">
+                        <input type="text" name="second-name" placeholder="Last Name" autocomplete="family-name">
+                    </div>
+                    <input type="email" name="email" placeholder="Enter a valid Email" autocomplete="email">
+                    <textarea name="message" placeholder="Write your query here..."></textarea>
+                    <button class="btn-primary" type="submit">Send Message</button>
+                </div>
+            </div>
+            <div class="book-consultation">
+                <h2 class="form-h3">Book Consultation</h2>
+                <div class="form-inner">
+                    <div class="form-name">
+                        <input type="text" name="first-name" placeholder="First Name" autocomplete="given-name">
+                        <input type="text" name="second-name" placeholder="Last Name" autocomplete="family-name">
+                    </div>
+                    <input type="email" name="email" placeholder="Enter a valid Email" autocomplete="email">
+                    <div class="form-date">
+                        <input type="date" onclick="this.showPicker()">
+                        <input type="time" onclick="this.showPicker()">
+                    </div>
+                    <textarea name="message" placeholder="Project overview..."></textarea>
+                    <button class="btn-primary" type="submit">Book Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/frontend/logic/components.js"></script>
+    <script>
+        function heroAnimation() {
+            const tl = gsap.timeline({ delay: 0.1 });
+
+            tl.from(".hero-text h1", {
+                y: 60,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power2.out"
+            })
+                .from(".hero-description", {
+                    y: 40,
+                    opacity: 0,
+                    duration: 0.7,
+                    ease: "power2.out"
+                }, "-=0.4")
+                .from(".hero-btns", {
+                    y: 30,
+                    opacity: 0,
+                    duration: 0.6,
+                    ease: "power2.out"
+                }, "-=0.4");
+        }
+        heroAnimation();
+
+        gsap.from(".company-title h1", {
+            xPercent: 80,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".company-title",
+                start: "top 85%",
+                end: "bottom top",
+                scrub: 1.2,
+                invalidateOnRefresh: true
+            }
+        });
+    </script>
+    <script src="/frontend/logic/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+.blog-hero {
+    padding: 160px 20px 60px;
+    text-align: center;
+}
+
+.blog-hero .label {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-success);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.blog-hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 200;
+}
+
+.highlight-text {
+    color: var(--color-success);
+    font-weight: 600;
+}
+
+.featured-section {
+    padding: 40px 20px;
+}
+
+.featured-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-cat {
+    color: var(--color-success);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.featured-content h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.post-meta .author {
+    color: var(--text-primary);
+    margin-right: 15px;
+}
+
+.blog-filter-section {
+    padding: 40px 0;
+    background: var(--bg-main);
+}
+
+.blog-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.blog-filter-btn {
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: 0.3s;
+}
+
+.blog-filter-btn.active,
+.blog-filter-btn:hover {
+    background: var(--color-success);
+    color: white;
+    border-color: var(--color-success);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.article-card {
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+}
+
+.article-img {
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-content {
+        padding: 40px 20px;
+    }
+
+    .featured-content h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* NEWSLETTER / CTA SECTION */
+.newsletter-section {
+    padding: 100px 20px;
+    background: radial-gradient(circle at bottom, rgba(218, 173, 76, 0.05) 0%, transparent 50%);
+}
+
+.newsletter-box {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    padding: 80px 40px;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.newsletter-box h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.newsletter-box p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 12px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    padding: 16px 24px;
+    border-radius: 14px;
+    color: var(--text-primary);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.subscribe-form input:focus {
+    border-color: var(--color-success);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 20px rgba(218, 173, 76, 0.1);
+}
+
+.pagination {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 600px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .newsletter-box {
+        padding: 50px 20px;
+        border-radius: 24px;
+    }
+}

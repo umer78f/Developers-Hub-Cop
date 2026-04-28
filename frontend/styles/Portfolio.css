@@ -1,0 +1,192 @@
+.portfolio-hero {
+    padding: 160px 20px 80px;
+    text-align: center;
+    background: radial-gradient(circle at top, rgba(100, 255, 180, 0.05) 0%, transparent 50%);
+}
+
+.portfolio-hero h1 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 200;
+    line-height: 1.1;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.highlight-text {
+    color: var(--color-success);
+    font-weight: 600;
+}
+
+.hero-sub {
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.filter-section {
+    padding: 20px 0;
+    background: var(--bg-main);
+}
+
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    padding: 8px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    border-color: var(--color-success);
+    color: var(--color-success);
+}
+
+.projects-section {
+    padding: 60px 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--bg-surface);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-success);
+}
+
+.project-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    scale: 1.1;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-cat {
+    color: var(--color-success);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* PROCESS SECTION */
+.portfolio-process {
+    padding: 100px 20px;
+    background: var(--bg-main);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.step {
+    position: relative;
+    padding: 20px;
+}
+
+.step-icon {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    font-family: 'Syne', sans-serif;
+}
+
+.step h4 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* TESTIMONIALS */
+.portfolio-testimonials {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, var(--bg-main), var(--bg-surface));
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle);
+    padding: 40px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.testimonial-card i {
+    font-size: 2rem;
+    color: var(--color-success);
+    opacity: 0.3;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.client-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-cta {
+    padding: 100px 20px;
+    background: var(--bg-surface);
+    text-align: center;
+}

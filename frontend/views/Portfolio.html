@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio/ Developers Hub Corporation</title>
+    <link rel="stylesheet" href="/frontend/styles/components.css">
+    <link rel="stylesheet" href="/frontend/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/frontend/styles/Portfolio.css">
+</head>
+
+<body>
+    <div id="navbar"> </div>
+
+    <div class="wrapper">
+
+
+        <!-- HERO -->
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1 class="reveal-text">Showcasing <span class="highlight-text">Innovation</span></h1>
+                <p class="hero-sub">A collection of our finest work, spanning from AI-driven platforms to
+                    high-performance web applications.</p>
+            </div>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ai">AI & Data</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS GRID -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Portfolio items loaded dynamically from backend -->
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section class="portfolio-process">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="project-cat">How We Work</span>
+                    <h2 class="section-title">From Concept to <span class="highlight-text">Reality</span></h2>
+                </div>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-icon">01</div>
+                        <h4>Discovery</h4>
+                        <p>We deep dive into your goals, audience, and technical requirements.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">02</div>
+                        <h4>Strategy</h4>
+                        <p>Architecting a scalable roadmap and choosing the optimal tech stack.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">03</div>
+                        <h4>Execution</h4>
+                        <p>Agile development with continuous integration and rapid prototyping.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">04</div>
+                        <h4>Scale</h4>
+                        <p>Launch, monitor, and optimize for global performance and security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="portfolio-testimonials">
+            <div class="container">
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>"DHC transformed our legacy systems into a modern SaaS powerhouse. Their AI integration was a
+                            game-changer for our data strategy."</p>
+                        <div class="client-info">
+                            <strong>Sarah Chen</strong>
+                            <span>CTO, Nexus Dynamics</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="ri-double-quotes-l"></i>
+                        <p>"The team's attention to detail in the UI/UX design was exceptional. They don't just write
+                            code; they build products users love."</p>
+                        <div class="client-info">
+                            <strong>Jameson Reed</strong>
+                            <span>Founder, Aura Retail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="portfolio-cta">
+            <div class="container text-center">
+                <h2>Have a Vision? Let's Build It.</h2>
+                <button class="btn-primary">Start a Project <i class="ri-mail-send-line"></i></button>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/frontend/logic/gsap.js"></script>
+    <script src="/frontend/logic/components.js"></script>
+    <script src="/frontend/logic/index.js"></script>
+</body>
+
+</html>

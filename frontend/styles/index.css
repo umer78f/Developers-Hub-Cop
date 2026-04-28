@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: var(--text-secondary);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+:root {
+    /* 🌑 Core Background System */
+    --bg-main: #000000;
+    /* Deep black */
+    --bg-surface: #121214;
+    /* Cards */
+
+    --bg-glass: rgba(255, 255, 255, 0.04);
+
+    /* 🧾 Text Colors */
+    --text-primary: #f4f4f5;
+    /* Almost white */
+    --text-secondary: #a1a1aa;
+    /* Soft gray */
+    --text-muted: #71717a;
+    /* Muted text */
+    --text-dark: #09090b;
+    --bg: #111;
+    /* 🔥 Primary Brand (Modern Orange) */
+    --color-primary: #ff6b35;
+    --color-primary-dark: #e85a2a;
+    --color-primary-light: #ff8a5c;
+
+    /* ⚡ Accent Colors (No Blue, High-End Feel) */
+    --accent-lime: #e6da35;
+    /* Tech energy */
+    --accent-magenta: #f472b6;
+    /* Modern pop */
+    --accent-amber: #f59e0b;
+    /* Warm highlight */
+
+    /* 🚦 Status */
+    --color-success: #daad4cdf;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+
+    /* 🔲 Borders */
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(200, 199, 199, 0.245);
+
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+.section-container {
+    max-width: 1280px;
+}
+
+.anim-container {
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin: 0 auto;
+}
